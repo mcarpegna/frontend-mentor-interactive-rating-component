@@ -37,14 +37,16 @@ function submitRating() {
 // Se agrega el valor elegido dentro del texto del mensaje al usuario
 document.addEventListener('DOMContentLoaded', function () {
     let ratingValue = localStorage.getItem('ratingValue'); // tomo el valor de la variable value que guarde anteriormente
-    if (ratingValue) { // validación para asegurarse que ratingValue como nodo aún
+    if (ratingValue) { // validación para asegurarse que ratingValue existe como nodo aún
         document.querySelector('.value').textContent = ratingValue;
         localStorage.clear();
     }
 
     // Para que la hacer click en cualquier parte te devuelva a la página principal
     let back = document.querySelector('.go_back');
-    back.addEventListener('click', function () {
-        window.location.href = 'index.html';
-    });    
+    if(back) { // validación para asegurarse que back existe como nodo aún
+        back.addEventListener('click', function () {
+            window.location.href = 'index.html';
+        });  
+    }  
 });
