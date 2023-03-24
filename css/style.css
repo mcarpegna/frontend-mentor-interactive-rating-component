@@ -1,0 +1,154 @@
+:root {
+    /* Fonts */
+    --primaryFont:'Overpass', sans-serif;
+
+    /* Colors */
+    --orange: #fb7413;
+    --white: #ffffff;
+    --lightGrey: #959eac;
+    --mediumGrey: #7c8798;
+    --darkBlue: #252d37;
+    --veryDarkBlue: #121417;
+}
+
+/* Globals */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1 rem = 10px */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    font-family: var(--primaryFont);
+    font-size: 1.5rem;
+    line-height: 1.7;
+    background-color: var(--veryDarkBlue);
+}
+
+h1 {
+    font-size: 2.4rem;
+    color: var(--white);
+    margin: 1rem 0;
+}
+
+p {
+    font-size: 1.4rem;
+    text-align: justify;
+    color: var(--mediumGrey);
+    margin: 1rem 0;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--mediumGrey);
+    cursor: pointer;
+}
+
+a:hover {
+    background-color: var(--mediumGrey);
+    color: var(--white);
+}
+
+a:active,
+a:focus {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+button {
+    background-color: var(--orange);
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 2rem;
+    color: var(--white);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    color: var(--orange);
+    background-color: var(--white);
+}
+
+/* Specific */
+.container {
+    max-width: 35rem;
+    max-height: 35rem;
+    padding: 2rem;  
+    border-radius: 2.5rem;
+    background: linear-gradient(0deg, rgba(23,30,40,1) 0%, rgba(31,38,48,1) 100%);
+
+    @media screen (min-width: 768px) {
+        .container {
+            max-width: 37rem;
+            max-height: 37rem;
+        }
+    }
+}
+
+.selector {
+    display: flex;    
+    justify-content:space-between;
+    list-style: none;
+    margin: 2rem 0;
+    padding: 0;
+}
+
+.circle {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: #262f38;
+}
+
+.star {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* Salute */
+
+.phone {
+    display: grid;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.selection {
+    display: grid;
+    justify-content: center;
+}
+.selection p {
+    color: var(--orange);
+    background-color: #262f38;
+    text-align: center;
+    width: fit-content;
+    padding: .5rem 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.thanks {
+    text-align: center;
+}
+
+.paragraph_two {
+    text-align: center;
+}
