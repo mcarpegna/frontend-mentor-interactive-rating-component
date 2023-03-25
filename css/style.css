@@ -1,6 +1,6 @@
 :root {
     /* Fonts */
-    --primaryFont:'Overpass', sans-serif;
+    --primaryFont: 'Overpass', sans-serif;
 
     /* Colors */
     --orange: #fb7413;
@@ -38,7 +38,6 @@ body {
 h1 {
     font-size: 2.4rem;
     color: var(--white);
-    margin: 1rem 0;
 }
 
 p {
@@ -89,9 +88,9 @@ button:hover {
 .container {
     max-width: 35rem;
     max-height: 35rem;
-    padding: 2rem;  
+    padding: 2rem;
     border-radius: 2.5rem;
-    background: linear-gradient(0deg, rgba(23,30,40,1) 0%, rgba(31,38,48,1) 100%);
+    background: linear-gradient(0deg, rgba(23, 30, 40, 1) 0%, rgba(31, 38, 48, 1) 100%);
 
     @media screen (min-width: 768px) {
         .container {
@@ -101,9 +100,13 @@ button:hover {
     }
 }
 
+.title {
+    margin: 1rem 0;
+}
+
 .selector {
-    display: flex;    
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-between;
     list-style: none;
     margin: 2rem 0;
     padding: 0;
@@ -115,7 +118,7 @@ button:hover {
     border-radius: 3rem;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     background-color: #262f38;
 }
 
@@ -136,6 +139,7 @@ button:hover {
     display: grid;
     justify-content: center;
 }
+
 .selection p {
     color: var(--orange);
     background-color: #262f38;
@@ -147,6 +151,7 @@ button:hover {
 
 .thanks {
     text-align: center;
+    margin: 1rem 0;
 }
 
 .paragraph_two {
